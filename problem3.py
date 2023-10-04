@@ -30,3 +30,15 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+x = input("enter an integer")
+y = input("enter an integer")
+z = input("enter an integer")
+x = int(x)
+y = int(y)
+z = int(z)
+
+if (x**2) + (y**2) == (z**2):
+    print(x,y,z, "form a Pythagorean triple")
+else:
+ print(x,y,z, "don't form a Pythagorean triple")

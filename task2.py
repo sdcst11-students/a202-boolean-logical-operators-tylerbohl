@@ -31,3 +31,22 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math
+
+x = input("Enter a number")
+x = int(x)
+
+x2 = x % 2
+xsqrt = x ** 2
+xr =math.floor(xsqrt)
+xsqrt2 = xsqrt - xr
+
+if x2 == 0 and xsqrt2 == 0:
+    print("square root and divsible by 2")
+elif x2 == 0:
+    print("divisible by 2")
+elif xsqrt == 0:
+    print("square root")
+else:
+    print("not square root of divisible by 2")
+
